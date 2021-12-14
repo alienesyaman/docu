@@ -1,92 +1,236 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>documentation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header class="py-3 border-bottom">
     <div class="header">
-        <img class="imgg" src="logo.png" alt="">
-
-    </div>
-
-    <header class="py-3  border-bottom">
-        <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-
-            </a>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0">
-                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-            </form>
+        <img class="imgg" src="logo.png" alt="" />
+      </div>
+</div>
+   
+  </header>
+  <body>
+    <div class="row">
+      <div class="col-lg-2 col-sm-12 accordions">
+        <div class="accordion accordion-flush sticky" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><p class="pp">İçindekiler</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body-full">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            Panele giriş
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <ul class="nav flex-column">
+                              <li class="nav-item mb-2">
+                                <a href="#giris" class="nav-link p-0">Panele Giriş</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            Talep Yönetimi
+                          </button>
+                        </h2>
+            
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <ul class="nav flex-column">
+                              <li class="nav-item mb-2">
+                                <a href="#oda" class="nav-link p-0">Oda Rezervasyon</a>
+                              </li>
+            
+                              <li class="nav-item mb-2">
+                                <a href="#isemri" class="nav-link p-0"
+                                  >İş Emri Görüntüleme</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#ihlist" class="nav-link p-0">Inhouse Listeleme</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#cinlist" class="nav-link p-0"
+                                  >Online Check-in Listeleme</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#cindet" class="nav-link p-0"
+                                  >Online Check-in Detay</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#onay" class="nav-link p-0">Misafir Onayı</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#profil" class="nav-link p-0"
+                                  >Misafir Profilleri</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#prodetay" class="nav-link p-0"
+                                  >Misafir Profil Detayı</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#talep" class="nav-link p-0">Misafir Talepleri</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#destek" class="nav-link p-0">Canlı Destek</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#görev" class="nav-link p-0">Görev Atama</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#grvdetay" class="nav-link p-0"
+                                  >Görev Atama Detay</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#ankgönderme" class="nav-link p-0"
+                                  >Bildirim/Anket Gönderme</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#anksonuc" class="nav-link p-0"
+                                  >Bildirim/Anket Sonuç</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            KULLANICI YÖNETİMİ
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <ul class="nav flex-column">
+                              <li class="nav-item mb-2">
+                                <a href="#userlist" class="nav-link p-0"
+                                  >Kullanıcı Listesi</a
+                                >
+                              </li>
+                              <li class="nav-item mb-2">
+                                <a href="#newuser" class="nav-link p-0"
+                                  >Yeni Kullanıcı Ekleme</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
-    </header>
-
-
-
-
-
-
-
-
-    <nav class="row row-cols-5  border-top">
-        <div class="col">
-            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-
+       
+      <div class="col-lg-9 col-sm-12">
+        <div class="word">
+          <h1>DOCS</h1>
+          <img id="giris" src="1.PNG" alt="" />
+          <img src="2.PNG" alt="" />
+          <img id="oda" src="3.PNG" alt="" />
+          <img id="isemri" src="4.PNG" alt="" />
+          <img id="ihlist" src="5.PNG" alt="" />
+          <img id="cinlist" src="6.PNG" alt="" />
+          <img id="cindet" src="7.PNG" alt="" />
+          <img id="onay" src="8.PNG" alt="" />
+          <img id="profil" src="9.PNG" alt="" />
+          <img id="prodetay" src="10.PNG" alt="" />
+          <img id="talep" src="11.PNG" alt="" />
+          <img id="destek" src="12.PNG" alt="" />
+          <img id="görev" src="13.PNG" alt="" />
+          <img id="grvdetay" src="14.PNG" alt="" />
+          <img id="ankgönderme" src="15.PNG" alt="" />
+          <img id="anksonuc" src="16.PNG" alt="" />
+          <img id="userlist" src="17.PNG" alt="" />
+          <img id="newuser" src="18.PNG" alt="" />
+          <img src="19.PNG" alt="" />
+          <img src="20.PNG" alt="" />
         </div>
-
-        <div class="col">
-
-        </div>
-
-        <div class="sticky" class="col">
-            <h4>Panel Tanıtım</h4>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#giris" class="nav-link p-0 ">Panele Giriş</a></li>
-
-            </ul>
-            <h4>Talep Yönetimi</h4>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#oda" class="nav-link p-0 ">Oda Rezervasyon</a></li>
-
-                <li class="nav-item mb-2"><a href="#isemri" class="nav-link p-0 ">İş Emri Görüntüleme</a></li>
-                <li class="nav-item mb-2"><a href="#ihlist" class="nav-link p-0 ">Inhouse Listeleme</a></li>
-                <li class="nav-item mb-2"><a href="#cinlist" class="nav-link p-0 ">Online Check-in Listeleme</a></li>
-                <li class="nav-item mb-2"><a href="#cindet" class="nav-link p-0 ">Online Check-in Detay</a></li>
-                <li class="nav-item mb-2"><a href="#onay" class="nav-link p-0 ">Misafir Onayı</a></li>
-                <li class="nav-item mb-2"><a href="#profil" class="nav-link p-0 ">Misafir Profilleri</a></li>
-                <li class="nav-item mb-2"><a href="#prodetay" class="nav-link p-0 ">Misafir Profil Detayı</a></li>
-                <li class="nav-item mb-2"><a href="#talep" class="nav-link p-0 ">Misafir Talepleri</a></li>
-                <li class="nav-item mb-2"><a href="#destek" class="nav-link p-0 ">Canlı Destek</a></li>
-                <li class="nav-item mb-2"><a href="#görev" class="nav-link p-0 ">Görev Atama</a></li>
-                <li class="nav-item mb-2"><a href="#grvdetay" class="nav-link p-0 ">Görev Atama Detay</a></li>
-                <li class="nav-item mb-2"><a href="#ankgönderme" class="nav-link p-0 ">Bildirim/Anket Gönderme</a></li>
-                <li class="nav-item mb-2"><a href="#anksonuc" class="nav-link p-0 ">Bildirim/Anket Sonuç</a></li>
-
-            </ul>
-            <h4>Kullanıcı Yönetimi</h4>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#userlist" class="nav-link p-0 ">Kullanıcı Listesi</a></li>
-                <li class="nav-item mb-2"><a href="#newuser" class="nav-link p-0 ">Yeni Kullanıcı Ekleme</a></li>
-
-            </ul>
-
-
-        </div>
+      </div>
+    
+      <div class="sagg">
 
 
 
-
-    </nav>
-
-    <div class="sagg">
-
-
-
-        <nav class="sticky" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <nav  class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 
 
             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -104,48 +248,6 @@
         </nav>
     </div>
 
-</head>
-
-
-
-<body>
-
-    <div class="word">
-        <h1>DOCS</h1>
-        <img id="giris" src="1.PNG" alt="">
-        <img src="2.PNG" alt="">
-        <img id="oda" src="3.PNG" alt="">
-        <img id="isemri" src="4.PNG" alt="">
-        <img id="ihlist" src="5.PNG" alt="">
-        <img id="cinlist" src="6.PNG" alt="">
-        <img id="cindet" src="7.PNG" alt="">
-        <img id="onay" src="8.PNG" alt="">
-        <img id="profil" src="9.PNG" alt="">
-        <img id="prodetay" src="10.PNG" alt="">
-        <img id="talep" src="11.PNG" alt="">
-        <img id="destek" src="12.PNG" alt="">
-        <img id="görev" src="13.PNG" alt="">
-        <img id="grvdetay" src="14.PNG" alt="">
-        <img id="ankgönderme" src="15.PNG" alt="">
-        <img id="anksonuc" src="16.PNG" alt="">
-        <img id="userlist" src="17.PNG" alt="">
-        <img id="newuser" src="18.PNG" alt="">
-        <img src="19.PNG" alt="">
-        <img src="20.PNG" alt="">
-
-
-
-
-
-    </div>
-
-
-
-
-
-
 </body>
-
 </html>
 
-</html>
