@@ -1,0 +1,106 @@
+* {
+    font-family: Poppins;
+}
+
+body {
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px 5px rgb(190, 190, 190), -2px -2px 15px 5px whitesmoke;
+}
+
+
+/* left nav list */
+
+.row-cols-5 {
+    display: inline;
+    background-color: #0038cb;
+    width: 230px;
+    float: left;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 10px;
+    height: 14000px;
+    line-height: 1.8;
+    border-radius: 15px;
+}
+
+
+/* sentence */
+
+.word {
+    text-align: center;
+    margin-top: 100px;
+    width: 1000px;
+    float: left;
+    height: 3000px;
+}
+
+
+/* header */
+
+.header {
+    color: white;
+    font-size: 80px;
+    background-color: white;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+
+/* right nav list
+ */
+
+.sagg {
+    width: 50px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 0px;
+    height: 1400px;
+}
+
+
+/* logo */
+
+.imgg {
+    width: 150px;
+    height: 65px;
+}
+
+
+/* sticky */
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+/* photos */
+
+img {
+    width: 1180px;
+    height: 700px;
+    border-radius: 15px;
+}
+
+
+/* icon */
+
+.icon {
+    color: white;
+}
+
+.text-muted {
+    color: white !important;
+}
+
+.icon,
+.text-muted {
+    border-radius: 50%;
+    background-color: #339af0;
+}
