@@ -27,18 +27,15 @@ body {
   border-radius: 50px;
 }
 
-.collapse {
-  width: 200px;
-}
-
 .accordion-header {
   display: flex;
   justify-content: center;
 }
 .accordion-button {
-  width: 150px;
-  height: 50px;
+  width: 300px;
+  height: 200px;
   background-color: whitesmoke;
+  font-size: 50px;
 }
 .accordion-body {
   background-color: whitesmoke;
@@ -46,6 +43,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: left;
+  font-size: 30px;
 }
 .accordion-item {
   background-color: whitesmoke;
@@ -56,6 +54,26 @@ body {
   height: 20px;
 }
 /* sentence */
+p {
+  font-size: 2rem;
+  line-height: 2;
+  text-align: left;
+}
+.block {
+  margin-bottom: 80px;
+  box-shadow: 5px 5px 10px 5px rgb(190, 190, 190), -2px -2px 15px 5px whitesmoke;
+  border-radius: 15px;
+}
+h1 {
+  font-weight: 800;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+strong {
+  color: red;
+}
 
 .word {
   text-align: center;
